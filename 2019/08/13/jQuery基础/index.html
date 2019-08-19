@@ -1,107 +1,133 @@
-
- <!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
+
+<!-- Head tag -->
 <head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--Description-->
   
-    <title>Hexo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
-    
-    <meta name="author" content="John Doe">
-    
 
-    
-    <meta name="description" content="JQueryJQuery的基本使用DOM对象用原生JS获取来的对象就是DOM对象  本质：DOM对象只能用原生 JavaScript 属性和方法  12var myDiv = doucument.querySelector(&apos;div&apos;);var mySpan = document.querySelector(&apos;span&apos;);  JQuery对象用JQuery方法获取的对象就是JQuery对象  本">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/2019/08/13/jQuery基础/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="JQueryJQuery的基本使用DOM对象用原生JS获取来的对象就是DOM对象  本质：DOM对象只能用原生 JavaScript 属性和方法  12var myDiv = doucument.querySelector(&apos;div&apos;);var mySpan = document.querySelector(&apos;span&apos;);  JQuery对象用JQuery方法获取的对象就是JQuery对象  本">
-<meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-18T08:02:00.708Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="JQueryJQuery的基本使用DOM对象用原生JS获取来的对象就是DOM对象  本质：DOM对象只能用原生 JavaScript 属性和方法  12var myDiv = doucument.querySelector(&apos;div&apos;);var mySpan = document.querySelector(&apos;span&apos;);  JQuery对象用JQuery方法获取的对象就是JQuery对象  本">
+  <!--Author-->
+  
+  <meta name="author" content="Chan">
+  
 
-    
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
-    
-    
-    <link rel="icon" href="/img/favicon.ico">
-    
-    
-    <link rel="apple-touch-icon" href="/img/jacman.jpg">
-    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
-    
-    <link rel="stylesheet" href="/css/style.css">
+  <!--Open Graph Title-->
+  
+      <meta property="og:title" content="Hexo">
+  
+  <!--Open Graph Description-->
+  
+  <!--Open Graph Site Name-->
+  <meta property="og:site_name" content="Hexo">
+  <!--Type page-->
+  
+      <meta property="og:type" content="website">
+  
+  <!--Page Cover-->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Title -->
+  
+  <title>Hexo</title>
+
+
+  <link rel="shortcut icon" href="https://hexo.io/icon/favicon-96x96.png">
+
+  <!-- Custom CSS/Sass -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!----------------------------
+  https://github.com/GallenHu/hexo-theme-Daily
+
+ _____            _   _
+|  __ \          (_) | |
+| |  | |   __ _   _  | |  _   _
+| |  | |  / _` | | | | | | | | |
+| |__| | | (_| | | | | | | |_| |
+|_____/   \__,_| |_| |_|  \__, |
+                          __/ |
+                         |___/
+
+    --------------------------->
+
 </head>
-</html>
-  <body>
-    <header>
-      
-<div>
-		
-			<div id="imglogo">
-				<a href="/"><img src="/img/logo.png" alt="Hexo" title="Hexo"/></a>
-			</div>
-			
-			<div id="textlogo">
-				<h1 class="site-name"><a href="/" title="Hexo">Hexo</a></h1>
-				<h2 class="blog-motto"></h2>
-			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
-			</a></div>
-			<nav class="animated">
-				<ul>
-					<ul>
-					 
-						<li><a href="/">Home</a></li>
-					
-						<li><a href="/archives">Archives</a></li>
-					
-						<li><a href="/about">About</a></li>
-					
-					<li>
- 					
-					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
-						<label>Search</label>
-						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
-						<input type="hidden" name="q" value="site:yoursite.com">
-					</form>
-					
-					</li>
-				</ul>
-			</nav>			
-</div>
-    </header>
-    <div id="container">
-      <div id="main" class="post" itemscope itemprop="blogPost">
-  
-	<article itemprop="articleBody"> 
-		<header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2019/08/13/jQuery基础/" title="" itemprop="url"></a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="John Doe" target="_blank" itemprop="author">John Doe</a>
-		
-  <p class="article-time">
-    <time datetime="2019-08-13T13:28:54.514Z" itemprop="datePublished"> Published 2019-08-13</time>
-    
-  </p>
+
+
+<body>
+
+  <!-- Nav -->
+  <header class="site-header">
+  <div class="header-inside">
+    <div class="logo">
+      <a href="/" rel="home">
+        
+        <img src="https://hexo.io/logo.svg" alt="Hexo" height="60">
+        
+      </a>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse">
+        <ul class="navbar-nav">
+          
+          
+            <li>
+              <a href="/.">
+                
+                  home
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/archives">
+                
+                  archive
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+    <div class="button-wrap">
+      <button class="menu-toggle">Primary Menu</button>
+    </div>
+  </div>
 </header>
-	<div class="article-content">
-		
-		<div id="toc" class="toc-article">
-			<strong class="toc-title">Contents</strong>
-		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#JQuery"><span class="toc-number">1.</span> <span class="toc-text">JQuery</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#JQuery的基本使用"><span class="toc-number">1.1.</span> <span class="toc-text">JQuery的基本使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#DOM对象"><span class="toc-number">1.1.1.</span> <span class="toc-text">DOM对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JQuery对象"><span class="toc-number">1.1.2.</span> <span class="toc-text">JQuery对象</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DOM对象与jQuery对象之间相互转换"><span class="toc-number">1.2.</span> <span class="toc-text">DOM对象与jQuery对象之间相互转换</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#DOM对象-转换成-jQuery对象："><span class="toc-number">1.2.1.</span> <span class="toc-text">DOM对象 转换成 jQuery对象：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery对象转换为DOM对象-两种方式-："><span class="toc-number">1.2.2.</span> <span class="toc-text">jQuery对象转换为DOM对象(两种方式)：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#jQuery常用的API"><span class="toc-number">2.</span> <span class="toc-text">jQuery常用的API</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery-选择器"><span class="toc-number">2.1.</span> <span class="toc-text">jQuery 选择器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery-层级选择器"><span class="toc-number">2.1.1.</span> <span class="toc-text">jQuery 层级选择器</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#隐式迭代（重要）"><span class="toc-number">2.2.</span> <span class="toc-text">隐式迭代（重要）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#隐式迭代：遍历内部DOM元素（伪数组形式存储）的过程"><span class="toc-number">2.2.1.</span> <span class="toc-text">隐式迭代：遍历内部DOM元素（伪数组形式存储）的过程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery-筛选选择器"><span class="toc-number">2.2.2.</span> <span class="toc-text">jQuery 筛选选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery-筛选方法（重点）"><span class="toc-number">2.2.3.</span> <span class="toc-text">jQuery 筛选方法（重点）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery排他思想"><span class="toc-number">2.2.4.</span> <span class="toc-text">jQuery排他思想</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery的链式编程"><span class="toc-number">2.2.5.</span> <span class="toc-text">jQuery的链式编程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery-样式操作"><span class="toc-number">2.3.</span> <span class="toc-text">jQuery 样式操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#操作CSS方法"><span class="toc-number">2.3.1.</span> <span class="toc-text">操作CSS方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#案例：tab栏切换分析"><span class="toc-number">2.3.2.</span> <span class="toc-text">案例：tab栏切换分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#类操作与className的区别："><span class="toc-number">2.3.3.</span> <span class="toc-text">类操作与className的区别：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery-效果"><span class="toc-number">2.4.</span> <span class="toc-text">jQuery 效果</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#显示-与-隐藏效果"><span class="toc-number">2.4.1.</span> <span class="toc-text">显示 与 隐藏效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#滑动效果"><span class="toc-number">2.4.2.</span> <span class="toc-text">滑动效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#动画队列-及其-停止排队方法"><span class="toc-number">2.4.3.</span> <span class="toc-text">动画队列 及其 停止排队方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#淡入淡出效果"><span class="toc-number">2.4.4.</span> <span class="toc-text">淡入淡出效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自定义动画-animate"><span class="toc-number">2.4.5.</span> <span class="toc-text">自定义动画 animate</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#案例：王者荣耀手风琴"><span class="toc-number">2.4.6.</span> <span class="toc-text">案例：王者荣耀手风琴</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery-属性操作"><span class="toc-number">2.5.</span> <span class="toc-text">jQuery 属性操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#设置-或-获取元素固有属性值-prop"><span class="toc-number">2.5.1.</span> <span class="toc-text">设置 或 获取元素固有属性值 prop()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#设置-或-获取元素自定义属性值-attr"><span class="toc-number">2.5.2.</span> <span class="toc-text">设置 或 获取元素自定义属性值 attr()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据缓存-data"><span class="toc-number">2.5.3.</span> <span class="toc-text">数据缓存 data()</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery-文本属性值"><span class="toc-number">2.6.</span> <span class="toc-text">jQuery 文本属性值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery-元素操作"><span class="toc-number">2.7.</span> <span class="toc-text">jQuery 元素操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#遍历元素"><span class="toc-number">2.7.1.</span> <span class="toc-text">遍历元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery-尺寸、位置操作"><span class="toc-number">2.7.2.</span> <span class="toc-text">jQuery 尺寸、位置操作</span></a></li></ol></li></ol></li></ol>
-		
-		</div>
-		
-		<h1 id="JQuery"><a href="#JQuery" class="headerlink" title="JQuery"></a>JQuery</h1><h2 id="JQuery的基本使用"><a href="#JQuery的基本使用" class="headerlink" title="JQuery的基本使用"></a>JQuery的基本使用</h2><h3 id="DOM对象"><a href="#DOM对象" class="headerlink" title="DOM对象"></a>DOM对象</h3><p>用原生JS获取来的对象就是DOM对象</p>
+
+
+  <!-- Main Content -->
+  <div class="content-area">
+  <div class="post">
+    <!-- Post Content -->
+    <div class="container">
+      <article>
+        <!-- Title date & tags -->
+        <div class="post-header">
+          <h1 class="entry-title">
+            Untitled
+            
+          </h1>
+          <p class="posted-on">
+          2019-08-13
+          </p>
+          <div class="tags-links">
+            
+              
+            
+          </div>
+        </div>
+        <!-- Post Main Content -->
+        <div class="entry-content has_line_number">
+          <h1 id="JQuery"><a href="#JQuery" class="headerlink" title="JQuery"></a>JQuery</h1><h2 id="JQuery的基本使用"><a href="#JQuery的基本使用" class="headerlink" title="JQuery的基本使用"></a>JQuery的基本使用</h2><h3 id="DOM对象"><a href="#DOM对象" class="headerlink" title="DOM对象"></a>DOM对象</h3><p>用原生JS获取来的对象就是DOM对象</p>
 <ul>
 <li>本质：DOM对象只能用原生 JavaScript 属性和方法</li>
 </ul>
@@ -538,338 +564,95 @@
 <p>### </p>
 <p>### </p>
 <p>### </p>
-<h3 id="jQuery-尺寸、位置操作"><a href="#jQuery-尺寸、位置操作" class="headerlink" title="jQuery 尺寸、位置操作"></a>jQuery 尺寸、位置操作</h3>  
-	</div>
-		<footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-	<div class="article-share" id="share">
-	
-	  <div data-url="http://yoursite.com/2019/08/13/jQuery基础/" data-title="Hexo" data-tsina="" class="share clearfix">
-	  </div>
-	
-	</div>
-
-
-</footer>
-
-   	       
-	</article>
-	
-<nav class="article-nav clearfix">
- 
- <div class="prev" >
- <a href="/2019/08/19/hello-world/" title="Hello World">
-  <strong>上一篇：</strong><br/>
-  <span>
-  Hello World</span>
-</a>
-</div>
-
-
-</nav>
-
-	
-
-
-
-</div>  
-      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
-
-  <div id="toc" class="toc-aside">
-  <strong class="toc-title">Contents</strong>
- 
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#JQuery"><span class="toc-number">1.</span> <span class="toc-text">JQuery</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#JQuery的基本使用"><span class="toc-number">1.1.</span> <span class="toc-text">JQuery的基本使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#DOM对象"><span class="toc-number">1.1.1.</span> <span class="toc-text">DOM对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JQuery对象"><span class="toc-number">1.1.2.</span> <span class="toc-text">JQuery对象</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DOM对象与jQuery对象之间相互转换"><span class="toc-number">1.2.</span> <span class="toc-text">DOM对象与jQuery对象之间相互转换</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#DOM对象-转换成-jQuery对象："><span class="toc-number">1.2.1.</span> <span class="toc-text">DOM对象 转换成 jQuery对象：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery对象转换为DOM对象-两种方式-："><span class="toc-number">1.2.2.</span> <span class="toc-text">jQuery对象转换为DOM对象(两种方式)：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#jQuery常用的API"><span class="toc-number">2.</span> <span class="toc-text">jQuery常用的API</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery-选择器"><span class="toc-number">2.1.</span> <span class="toc-text">jQuery 选择器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery-层级选择器"><span class="toc-number">2.1.1.</span> <span class="toc-text">jQuery 层级选择器</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#隐式迭代（重要）"><span class="toc-number">2.2.</span> <span class="toc-text">隐式迭代（重要）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#隐式迭代：遍历内部DOM元素（伪数组形式存储）的过程"><span class="toc-number">2.2.1.</span> <span class="toc-text">隐式迭代：遍历内部DOM元素（伪数组形式存储）的过程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery-筛选选择器"><span class="toc-number">2.2.2.</span> <span class="toc-text">jQuery 筛选选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery-筛选方法（重点）"><span class="toc-number">2.2.3.</span> <span class="toc-text">jQuery 筛选方法（重点）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery排他思想"><span class="toc-number">2.2.4.</span> <span class="toc-text">jQuery排他思想</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery的链式编程"><span class="toc-number">2.2.5.</span> <span class="toc-text">jQuery的链式编程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery-样式操作"><span class="toc-number">2.3.</span> <span class="toc-text">jQuery 样式操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#操作CSS方法"><span class="toc-number">2.3.1.</span> <span class="toc-text">操作CSS方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#案例：tab栏切换分析"><span class="toc-number">2.3.2.</span> <span class="toc-text">案例：tab栏切换分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#类操作与className的区别："><span class="toc-number">2.3.3.</span> <span class="toc-text">类操作与className的区别：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery-效果"><span class="toc-number">2.4.</span> <span class="toc-text">jQuery 效果</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#显示-与-隐藏效果"><span class="toc-number">2.4.1.</span> <span class="toc-text">显示 与 隐藏效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#滑动效果"><span class="toc-number">2.4.2.</span> <span class="toc-text">滑动效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#动画队列-及其-停止排队方法"><span class="toc-number">2.4.3.</span> <span class="toc-text">动画队列 及其 停止排队方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#淡入淡出效果"><span class="toc-number">2.4.4.</span> <span class="toc-text">淡入淡出效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自定义动画-animate"><span class="toc-number">2.4.5.</span> <span class="toc-text">自定义动画 animate</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#案例：王者荣耀手风琴"><span class="toc-number">2.4.6.</span> <span class="toc-text">案例：王者荣耀手风琴</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery-属性操作"><span class="toc-number">2.5.</span> <span class="toc-text">jQuery 属性操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#设置-或-获取元素固有属性值-prop"><span class="toc-number">2.5.1.</span> <span class="toc-text">设置 或 获取元素固有属性值 prop()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#设置-或-获取元素自定义属性值-attr"><span class="toc-number">2.5.2.</span> <span class="toc-text">设置 或 获取元素自定义属性值 attr()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据缓存-data"><span class="toc-number">2.5.3.</span> <span class="toc-text">数据缓存 data()</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery-文本属性值"><span class="toc-number">2.6.</span> <span class="toc-text">jQuery 文本属性值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery-元素操作"><span class="toc-number">2.7.</span> <span class="toc-text">jQuery 元素操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#遍历元素"><span class="toc-number">2.7.1.</span> <span class="toc-text">遍历元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery-尺寸、位置操作"><span class="toc-number">2.7.2.</span> <span class="toc-text">jQuery 尺寸、位置操作</span></a></li></ol></li></ol></li></ol>
- 
-  </div>
-
-<div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
-<aside class="clearfix">
-
-  
-
-
-  
-
-  
-
-  <div class="linkslist">
-  <p class="asidetitle">Links</p>
-    <ul>
-        
-          <li>
-            
-            	<a href="https://coderq.com" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
-            
-          </li>
-        
-          <li>
-            
-            	<a href="http://wuchong.me" target="_blank" title="Jark&#39;s Blog">Jark&#39;s Blog</a>
-            
-          </li>
-        
-    </ul>
-</div>
-
-  
-
-
-  <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
-</div>
-
-  <div class="weiboshow">
-  <p class="asidetitle">Weibo</p>
-    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=&verifier=b3593ceb&dpc=1"></iframe>
-</div>
-
-
-</aside>
-</div>
+<h3 id="jQuery-尺寸、位置操作"><a href="#jQuery-尺寸、位置操作" class="headerlink" title="jQuery 尺寸、位置操作"></a>jQuery 尺寸、位置操作</h3>
+        </div>
+      </article>
     </div>
-    <footer><div id="footer" >
-	
-	<div class="line">
-		<span></span>
-		<div class="author"></div>
-	</div>
-	
-	
-	<section class="info">
-		<p> Hello ,I&#39;m Larry Page in Google. <br/>
-			This is my blog,believe it or not.</p>
-	</section>
-	 
-	<div class="social-font" class="clearfix">
-		
-		<a href="http://weibo.com/2176287895" target="_blank" class="icon-weibo" title="微博"></a>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	</div>
-			
-		
-
-		<p class="copyright">
-		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2019 
-		
-		<a href="/about" target="_blank" title="John Doe">John Doe</a>
-		
-		
-		</p>
-</div>
-</footer>
-    <script src="/js/jquery-2.0.3.min.js"></script>
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
-<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
-
-<script type="text/javascript">
-$(document).ready(function(){ 
-  $('.navbar').click(function(){
-    $('header nav').toggleClass('shownav');
-  });
-  var myWidth = 0;
-  function getSize(){
-    if( typeof( window.innerWidth ) == 'number' ) {
-      myWidth = window.innerWidth;
-    } else if( document.documentElement && document.documentElement.clientWidth) {
-      myWidth = document.documentElement.clientWidth;
-    };
-  };
-  var m = $('#main'),
-      a = $('#asidepart'),
-      c = $('.closeaside'),
-      o = $('.openaside');
-  c.click(function(){
-    a.addClass('fadeOut').css('display', 'none');
-    o.css('display', 'block').addClass('fadeIn');
-    m.addClass('moveMain');
-  });
-  o.click(function(){
-    o.css('display', 'none').removeClass('beforeFadeIn');
-    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
-    m.removeClass('moveMain');
-  });
-  $(window).scroll(function(){
-    o.css("top",Math.max(80,260-$(this).scrollTop()));
-  });
-  
-  $(window).resize(function(){
-    getSize(); 
-    if (myWidth >= 1024) {
-      $('header nav').removeClass('shownav');
-    }else{
-      m.removeClass('moveMain');
-      a.css('display', 'block').removeClass('fadeOut');
-      o.css('display', 'none');
+    <!-- Comments -->
+    <div class="container">
       
-      $('#toc.toc-aside').css('display', 'none');
-        
-    }
-  });
-});
-</script>
+<section id="comment">
+  <!-- <h1 class="title">Comments</h1> -->
 
-<script type="text/javascript">
-$(document).ready(function(){ 
-  var ai = $('.article-content>iframe'),
-      ae = $('.article-content>embed'),
-      t  = $('#toc'),
-      ta = $('#toc.toc-aside'),
-      o  = $('.openaside'),
-      c  = $('.closeaside');
-  if(ai.length>0){
-    ai.wrap('<div class="video-container" />');
-  };
-  if(ae.length>0){
-   ae.wrap('<div class="video-container" />');
-  };
-  c.click(function(){
-    ta.css('display', 'block').addClass('fadeIn');
-  });
-  o.click(function(){
-    ta.css('display', 'none');
-  });
-  $(window).scroll(function(){
-    ta.css("top",Math.max(140,320-$(this).scrollTop()));
-  });
-});
-</script>
+  
+</section>
 
 
-<script type="text/javascript">
-$(document).ready(function(){ 
-  var $this = $('.share'),
-      url = $this.attr('data-url'),
-      encodedUrl = encodeURIComponent(url),
-      title = $this.attr('data-title'),
-      tsina = $this.attr('data-tsina'),
-      description = $this.attr('description');
-  var html = [
-  '<div class="hoverqrcode clearfix"></div>',
-  '<a class="overlay" id="qrcode"></a>',
-  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
-  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
-  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
-  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
-  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
-  '<span title="Share to"></span>'
-  ].join('');
-  $this.append(html);
+    </div>
+    <!-- Pre or Next -->
+    <div class="nav-links">
+      
+        <div class="nav-previous">
+          <a href="/2019/08/19/hello-world/" rel="prev"><span class="meta-arraw meta-arraw-left"></span> Older Posts</a>
+        </div>
+      
+      
+    </div>
 
-  $('.hoverqrcode').hide();
+  </div>
+</div>
 
-  var myWidth = 0;
-  function updatehoverqrcode(){
-    if( typeof( window.innerWidth ) == 'number' ) {
-      myWidth = window.innerWidth;
-    } else if( document.documentElement && document.documentElement.clientWidth) {
-      myWidth = document.documentElement.clientWidth;
-    };
-    var qrsize = myWidth > 1024 ? 200:100;
-    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
-    var p = $('.article-share-qrcode').position();
-    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
-                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
-                          .qrcode(options);
-  };
-  $(window).resize(function(){
-    $('.hoverqrcode').hide();
-  });
-  $('.article-share-qrcode').click(function(){
-    updatehoverqrcode();
-    $('.hoverqrcode').toggle();
-  });
-  $('.article-share-qrcode').hover(function(){}, function(){
-      $('.hoverqrcode').hide();
-  });
-});   
-</script>
+
+  <!-- Footer -->
+  <!-- Footer-widgets -->
+<div class="footer-widgets">
+  <div class="row inside-wrapper">
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">关于本站</h1>
+        <div class="custom-widget-content">
+          
+          <ul><li><a href="https://github.com/GallenHu/hexo-theme-Daily/wiki">如何自定义这里的内容(配置教程)?</a></li></ul>
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">Contact</h1>
+        <div class="widget-text">
+          
+            
+              <a href="https://github.com/GallenHu" class="icon icon-github" target="_blank">github</a>
+            
+          
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">Search</h1>
+        <div class="widget-text">
+          <form onSubmit="return appDaily.submitSearch('')">
+            <p>
+              <input type="text" placeholder="search..." id="homeSearchInput">
+            </p>
+            <!-- <input type="submit" value="GO"> -->
+          </form>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="site-info">
+  <p>
+    <span>Hexo &copy; 2019</span>
+    
+      <span class="split">|</span>
+      <span>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> with Theme <a href="https://github.com/GallenHu/hexo-theme-Daily" target="_blank">Daily</a></span>
+    
+  </p>
+</footer>
+
+
+  <!-- After footer scripts -->
+  <!-- scripts -->
+<script src="/js/app.js"></script>
 
 
 
 
 
+</body>
 
-
-
-
-
-
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){ 
-  $('.article-content').each(function(i){
-    $(this).find('img').each(function(){
-      if ($(this).parent().hasClass('fancybox')) return;
-      var alt = this.alt;
-      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
-      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
-    });
-    $(this).find('.fancybox').each(function(){
-      $(this).attr('rel', 'article' + i);
-    });
-  });
-  if($.fancybox){
-    $('.fancybox').fancybox();
-  }
-}); 
-</script>
-
-
-
-<!-- Analytics Begin -->
-
-
-
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-
-
-
-<!-- Analytics End -->
-
-<!-- Totop Begin -->
-
-	<div id="totop">
-	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
-	</div>
-	<script src="/js/totop.js"></script>
-
-<!-- Totop End -->
-
-<!-- MathJax Begin -->
-<!-- mathjax config similar to math.stackexchange -->
-
-
-<!-- MathJax End -->
-
-<!-- Tiny_search Begin -->
-
-<!-- Tiny_search End -->
-
-  </body>
 </html>
