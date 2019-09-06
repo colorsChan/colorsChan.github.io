@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
+    <title><![CDATA[JSON方法将字符串和数组对象（或数组）之间转换出现的问题]]></title>
     <url>%2F2019%2F09%2F06%2FJSON%E6%96%B9%E6%B3%95%E5%B0%86%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%92%8C%E6%95%B0%E7%BB%84%E5%AF%B9%E8%B1%A1%EF%BC%88%E6%88%96%E6%95%B0%E7%BB%84%EF%BC%89%E4%B9%8B%E9%97%B4%E8%BD%AC%E6%8D%A2%E7%9A%84%E9%97%AE%E9%A2%98%2F</url>
-    <content type="text"><![CDATA[SyntaxError: Unexpected token o in JSON at position 1 at JSON.parse####JSON方法将字符串和数组对象（或数组）之间转换出现的问题在本地存储中存取数组对象时发生的错误：123456789const comment = &#123;id: Date.now(), user: this.user, content: this.content&#125;;const list = JSON.parse(localStorage.getItem("cm's") || '[]');console.log(list);list.push(comment);localStorage.setItem("cm's",JSON.parse(list));this.user = this.content = '';this.$emit('func') 运行上面代码会报错，如下：![屏幕快照 2019-09-06 下午2.03.37](/Users/macbookpro/Desktop/屏幕快照 2019-09-06 下午2.03.37.png) 本地存储中的数据时以JSON字符串的形式存储的，我取其中的数据时，需要将其转换为数组的形式（这里用JSON.parse() 方法） 1const list = JSON.parse(localStorage.getItem(&quot;cm&apos;s&quot;) || &apos;[]&apos;); 然后我将自己定义的对象添加进本地存储时，则需要将数组转换为JSON字符串形式存储（这里用JSON.stringify() 方法） 1localStorage.setItem("cm's",JSON.stringify(list)); 知识点 JSON.parse() 方法用于将一个 JSON 字符串转换为对象 JSON.stringify()方法是将一个**JS对象或数组转换为一个 JSON字符串]]></content>
+    <content type="text"><![CDATA[SyntaxError: Unexpected token o in JSON at position 1 at JSON.parse在本地存储中存取数组对象时发生的错误：123456789const comment = &#123;id: Date.now(), user: this.user, content: this.content&#125;;const list = JSON.parse(localStorage.getItem("cm's") || '[]');console.log(list);list.push(comment);localStorage.setItem("cm's",JSON.parse(list));this.user = this.content = '';this.$emit('func') 运行上面代码会报错，如下： 本地存储中的数据时以JSON字符串的形式存储的，我取其中的数据时，需要将其转换为数组的形式（这里用JSON.parse() 方法） 1const list = JSON.parse(localStorage.getItem(&quot;cm&apos;s&quot;) || &apos;[]&apos;); 然后我将自己定义的对象添加进本地存储时，则需要将数组转换为JSON字符串形式存储（这里用JSON.stringify() 方法） 1localStorage.setItem("cm's",JSON.stringify(list)); 知识点 JSON.parse() 方法用于将一个 JSON 字符串转换为对象 JSON.stringify()方法是将一个**JS对象或数组转换为一个 JSON字符串]]></content>
+      <categories>
+        <category>-前端知识点</category>
+      </categories>
+      <tags>
+        <tag>-前端, -JavaScript</tag>
+      </tags>
   </entry>
   <entry>
-    <title></title>
+    <title><![CDATA[Vue运行项目时遇到 Error Cannot find module 'chalk' ....]]></title>
     <url>%2F2019%2F08%2F29%2F%E3%80%90VueEr%E3%80%91%E8%BF%90%E8%A1%8C%E9%A1%B9%E7%9B%AE%E6%97%B6%E9%81%87%E5%88%B0%20Error%20Cannot%20find%20module%20'chalk'%2F</url>
-    <content type="text"><![CDATA[【VueEr】运行项目时遇到 Error: Cannot find module ‘chalk’ ….打开一个Vue项目之前，执行 npm run dev 时，报下面的错误：​ Error: Cannot find module ‘chalk’ ….. 方法1.看看是不是你改动过根文件的文件名，是这样的话，记得原来的文件名你可以改回来原来的名字 再 npm run dev 试试。 否则 用方法2。 方法2.简单粗暴的删掉原来的 node_modules 模块 重新安装，命令如下： $ rm -rf node_modules $ npm install 接着 npm run dev 就可以成功了]]></content>
+    <content type="text"><![CDATA[打开一个Vue项目之前，执行 npm run dev 时，报下面的错误：​ Error: Cannot find module ‘chalk’ ….. 方法1.看看是不是你改动过根文件的文件名，是这样的话，记得原来的文件名你可以改回来原来的名字 再 npm run dev 试试。 否则 用方法2。 方法2.简单粗暴的删掉原来的 node_modules 模块 重新安装，命令如下： $ rm -rf node_modules $ npm install 接着 npm run dev 就可以成功了]]></content>
+      <categories>
+        <category>-前端知识点</category>
+      </categories>
+      <tags>
+        <tag>-前端 -JavaScript</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[article]]></title>
