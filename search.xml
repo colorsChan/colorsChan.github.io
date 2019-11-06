@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title></title>
+    <url>%2F2019%2F11%2F01%2FVue%E6%8A%A5%E9%94%99-import%E5%BC%95%E5%85%A5%E6%96%B9%E5%BC%8F%E9%94%99%E8%AF%AF%2F</url>
+    <content type="text"><![CDATA[Vue报错TypeError: Object(…) is not a function控制台报错如下：TypeError: Object(…) is not a function![](/Users/macbookpro/Desktop/屏幕快照 2019-11-01 下午3.20.37.png)解决方案： 引入 currentMonthGoodsQuery 时方法错误，少加了{} 正确形式： 1import &#123; currentMonthGoodsQuery &#125; from '@/api/overview';]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[JSON方法将字符串和数组对象（或数组）之间转换出现的问题]]></title>
     <url>%2F2019%2F09%2F06%2FJSON%E6%96%B9%E6%B3%95%E5%B0%86%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%92%8C%E6%95%B0%E7%BB%84%E5%AF%B9%E8%B1%A1%EF%BC%88%E6%88%96%E6%95%B0%E7%BB%84%EF%BC%89%E4%B9%8B%E9%97%B4%E8%BD%AC%E6%8D%A2%E7%9A%84%E9%97%AE%E9%A2%98%2F</url>
     <content type="text"><![CDATA[SyntaxError: Unexpected token o in JSON at position 1 at JSON.parse在本地存储中存取数组对象时发生的错误：123456789const comment = &#123;id: Date.now(), user: this.user, content: this.content&#125;;const list = JSON.parse(localStorage.getItem("cm's") || '[]');console.log(list);list.push(comment);localStorage.setItem("cm's",JSON.parse(list));this.user = this.content = '';this.$emit('func') 运行上面代码会报错，如下： 本地存储中的数据时以JSON字符串的形式存储的，我取其中的数据时，需要将其转换为数组的形式（这里用JSON.parse() 方法） 1const list = JSON.parse(localStorage.getItem(&quot;cm&apos;s&quot;) || &apos;[]&apos;); 然后我将自己定义的对象添加进本地存储时，则需要将数组转换为JSON字符串形式存储（这里用JSON.stringify() 方法） 1localStorage.setItem("cm's",JSON.stringify(list)); 知识点 JSON.parse() 方法用于将一个 JSON 字符串转换为对象 JSON.stringify()方法是将一个**JS对象或数组转换为一个 JSON字符串]]></content>
